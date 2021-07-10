@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" >
+    <meta name="description" content=" Ustacky internship ecommerce project">
+    <meta name="author" content="Aliyu Kelani">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ecommerce-site</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2><img src="img/ems.svg" alt="EMS" aria-roledescription="logo"></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+
+            </ul>
+        </nav>
+        <button class="shopping-cart"><img src="img/cart.svg" alt="cart"><span class="count">0</span></button>
+    </header>
+    <main>
+        <section id="intro" class="intro">
+            <div class="hero">
+                <h1>The e-milleniAL Store</h1>
+                <div class="shop-img"></div>
+            </div>
+            <a href="#shop">Shop Now</a>
+        </section>
+        <section id="about" class="about">
+            <p>E-millenial store is an hypothetical online store for gadgets we believe every 'Millineial' or 'GEN-Z' should have today. we've got mobile phones, laptops, smartwatches and other gadgets. Explore all our gadgetsand choose the ones that suit you. </p>
+        </section>
+        <section id="shop" class="shop">
+            <h2 class="shop-heading">our gadgets</h2>
+            <div class="shop-products">
+                <!-- <div class="shop-product">
+                    <div class="product-img">
+                        <div class="product-details">
+                            <p class="price">2000</p>
+                        </div>
+                    </div>
+                    <div class="product-name"><p>product1</p></div>
+                    <button class="product-button">Add to Cart</button>
+                </div> -->
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="logo">
+            <h2><img src="img/ems.svg" alt="logo"></h2>
+        </div>
+       <p>designed and crafted  by a frontend ninja</p>
+    </footer>
+    <div class="checkout loaded">
+        <div class="checkout-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th></th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>#</td>
+                        <td>#</td>
+                        <td >#</td>
+                        <td>
+                            <button class="quantity-add">+</button>
+                            <span class="quantity-count">50</span>
+                            <button class="quantity-sub">-</button>
+                        </td>
+                        <td>
+                            <button class="remove">remove</button>
+                        </td>
+                    </tr> -->
+                    
+                </tbody>
+                <tfoot>
+                    <small class="error-message cart"></small>
+                </tfoot>
+            </table>
+        </div>
+        <div class="checkout-form" >
+            <form action="#">
+                <input type="text" name="name" id="name" class="name" placeholder="Your Name" aria-placeholder="Your Email">
+                <small class="error-message name"></small>
+                <input type="email" name="email" id="email" class="email" placeholder="Your Email" aria-placeholder="Your Email">
+                <small class="error-message email"></small>
+                <input type="tel" name="phone" class="phone" id="phone" placeholder="your phone number" aria-placeholder="your phone number">
+                <small class="error-message phone"></small>
+                <div>
+                    <p>Total Amount to be Paid</p>
+                    <p class="total-amount">0</p>
+                </div>
+                <div class="button">
+                    <button type="reset" value="">continue shopping</button>
+                    <button type="submit" value="">checkout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="checkout-success loaded">
+        <h3>Thank you <span class="customername">name</span>, your order has been received</h3>
+        <div class="checkout-items">
+            
+            <table border="">
+                <caption class="table-heading">summary</caption>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                    </tr>
+        
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="button">
+            <button type="submit" value="">OK</button>
+        </div>
+    </div>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
